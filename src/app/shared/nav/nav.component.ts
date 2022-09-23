@@ -18,6 +18,6 @@ isDark : boolean = false;
   }
 toggleTheme(){
  
- !this.isDark ? this.renderer2.addClass(this.document.body,'dark-mode') : "";
+this.document.body.classList.toggle('dark-mode') ;
 }
 }

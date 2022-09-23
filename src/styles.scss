@@ -27,11 +27,29 @@
    --light-mode-bg: hsl(0, 0%, 98%);
    --light-blue: hsl(200, 15%, 8%);
    --light-input:  hsl(0, 0%, 52%);
+   --shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
 body{
+    --bg: var( --light-mode-bg);
+    --surface-color: var(--neutral-white);
+    --text: var(--light-blue);
+
+
     font-family: var(--font-family);
+    background-color: var(--bg);
+    color: var(--text);
 }
+
+body.dark-mode{
+    --bg: var( --dark-mode-bg);
+    --surface-color: var(--dark-blue);
+    --text: var(--neutral-white);
+
+    background-color: var(--bg);
+    color: var(--text);
+}
+
 ul{
     list-style: none;
 }
@@ -88,16 +106,3 @@ h3{
   
 }
 
-header{
-    background-color: var(--neutral-white);
-
-}
-
-.dark-mode{
-    background-color: var(--dark-mode-bg);
-}
-
-
-.dark-mode header{
-    background-color: var(--dark-blue)
-}

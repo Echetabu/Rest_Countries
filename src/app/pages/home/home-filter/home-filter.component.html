@@ -1,1 +1,24 @@
-<p>home-filter works!</p>
+<div class="container flex filter">
+    <div class="filter__left">
+        <div class="search">
+            <i class='bx bx-search'></i>
+            <input type="text" placeholder="Search for a country...">
+        </div>
+    </div>
+
+    <div class="filter__right">
+        <div class="filter__right__region">
+            <div class="selected"  (click)="openMenu()">
+             <span>{{ selectedText }}</span>   
+             <i class="bx bxs-chevron-down"></i>
+            </div>
+          
+            <div class="options" [ngClass]="isOpen ? 'show': ''">
+                <div *ngFor="let region of regions;">
+                    <div class="region" (click)="selected(region)">{{ region }}</div>
+                </div>
+            </div>
+        
+        </div>
+    </div>
+</div>
