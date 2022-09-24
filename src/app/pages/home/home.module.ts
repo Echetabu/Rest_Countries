@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home.component';
 import { HomeCardComponent } from './home-card/home-card.component';
 import { HomeFilterComponent } from './home-filter/home-filter.component';
+import { RouterModule } from '@angular/router';
+
 
 
 
@@ -13,7 +15,9 @@ import { HomeFilterComponent } from './home-filter/home-filter.component';
     HomeFilterComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule
+  
   ]
 })
 export class HomeModule { }

@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { DetailComponent } from './pages/detail/detail.component';
+import { DetailModule } from './pages/detail/detail.module';
 import { HomeModule } from './pages/home/home.module';
 import { SharedModule } from './shared/shared.module';
 
@@ -17,7 +18,8 @@ import { SharedModule } from './shared/shared.module';
     BrowserModule,
     AppRoutingModule,
     SharedModule,
-    HomeModule
+    HomeModule,
+    DetailModule
   ],
   providers: [],
   bootstrap: [AppComponent]
